@@ -90,15 +90,24 @@ public class Burger {
 		this.mustardPrice = mustardPrice;
 	}
 	public String getKetchup() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return null;
+		}
 		return ketchup;
 	}
 	public void setKetchup(String ketchup) {
 		this.ketchup = ketchup;
 	}
 	public double getKetchupPrice() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return 0.0;
+		}
 		return ketchupPrice;
 	}
 	public void setKetchupPrice(double ketchupPrice) {
+		
 		this.ketchupPrice = ketchupPrice;
 	}
 	public String getRelish() {
@@ -126,24 +135,40 @@ public class Burger {
 		this.guacamolePrice = guacamolePrice;
 	}
 	public String getCheese() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return null;
+		}
 		return cheese;
 	}
 	public void setCheese(String cheese) {
 		this.cheese = cheese;
 	}
 	public double getCheesePrice() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return 0.0;
+		}
 		return cheesePrice;
 	}
 	public void setCheesePrice(double cheesePrice) {
 		this.cheesePrice = cheesePrice;
 	}
 	public String getBacon() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return null;
+		}
 		return bacon;
 	}
 	public void setBacon(String bacon) {
 		this.bacon = bacon;
 	}
 	public double getBaconPrice() {
+		if(getName().contains("Healthy")) {
+			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			return 0.0;
+		}
 		return BaconPrice;
 	}
 	public void setBaconPrice(double baconPrice) {
