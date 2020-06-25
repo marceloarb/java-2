@@ -18,7 +18,13 @@ public class Main {
     	healthy1.hamburguerPrice( healthy.getMayoPrice(), healthy.getCheesePrice(), healthy.getGuacamolePrice(),healthy.getRelishPrice());
     	DeluxeBurger deluxe = new DeluxeBurger("Deluxe","Normal","beef");
     	deluxe.hamburguerPrice(healthy.getBaconPrice(), healthy.getMayoPrice(), healthy.getCheesePrice(), healthy.getGuacamolePrice(),healthy.getRelishPrice(),healthy.getRelishPrice(),healthy.getRelishPrice());
-    
+    	Side sides = new Side("Fries", plain);
+    	sides.sideBurger();
+    	Meal meal1 = new Meal("Coke","Fries",plain);
+    	meal1.printPlainMeal();
+    	Meal meal2 = new Meal("Pepsi", "Ice cream", deluxe);
+    	meal2.printPlainMeal();
+    	
     
     
     

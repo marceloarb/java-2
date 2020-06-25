@@ -192,7 +192,7 @@ public class Burger {
 	public void setNamePrice(double namePrice) {
 		this.namePrice = namePrice;
 	}
-	
+	// Overloading
 	public double hamburguerPrice(double One) {
 		this.total = this.namePrice+One;
 		System.out.println("Hamburguer price: $" + this.total);

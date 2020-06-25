@@ -8,7 +8,7 @@ public class HealthBurger extends Burger{
 	}
 	
 	
-	
+	@Override
 	public double hamburguerPrice(double One) {
 		
 		
@@ -17,18 +17,21 @@ public class HealthBurger extends Burger{
 		return this.healthPrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two) {
 		this.healthPrice = this.healthPrice+One+Two;
 		System.out.println("Hamburguer price: $" + this.healthPrice);
 		return this.healthPrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three) {
 		this.healthPrice = this.healthPrice+One+Two+Three;
 		System.out.println("Hamburguer price: $" + this.healthPrice);
 		return this.healthPrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three,double Four) {
 		
 		this.healthPrice = this.healthPrice+One+Two+Three+Four;
@@ -36,6 +39,7 @@ public class HealthBurger extends Burger{
 		return this.healthPrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five) {
 		if(getName().contains("Health")) {
 			System.out.println("You can only have 4 toppings for a plain burguer");
@@ -44,6 +48,7 @@ public class HealthBurger extends Burger{
 		return this.healthPrice ;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five,double Six) {
 		if(getName().contains("Health")) {
 			System.out.println("You can only have 4 toppings for a plain burguer");

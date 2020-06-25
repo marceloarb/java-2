@@ -7,37 +7,42 @@ public class DeluxeBurger extends Burger{
 		super("Deluxe", breadType, meat);
 		
 	}
-	
+	@Override
 	public double hamburguerPrice(double One) {
 		this.deluxePrice = this.deluxePrice+One;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
 		return this.deluxePrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two) {
 		this.deluxePrice = this.deluxePrice+One+Two;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
 		return this.deluxePrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three) {
 		this.deluxePrice = this.deluxePrice+One+Two+Three;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
 		return this.deluxePrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three,double Four) {
 		this.deluxePrice = this.deluxePrice+One+Two+Three+Four;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
 		return this.deluxePrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three,double Four,double Five) {
 		this.deluxePrice = this.deluxePrice+One+Two+Three+Four+Five;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
 		return this.deluxePrice;
 		
 	}
+	@Override
 	public double hamburguerPrice(double One,double Two,double Three,double Four,double Five,double Six) {
 		this.deluxePrice = this.deluxePrice+One+Two+Three+Four+Five+Six;
 		System.out.println("Hamburguer price: $" + this.deluxePrice);
