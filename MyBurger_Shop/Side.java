@@ -1,10 +1,13 @@
 package MyBurger_Shop;
 
-import java.util.List;
+
 
 public class Side {
 	
-	public static String fries = "Fries";
+	final static String fries = "Fries";
+	final static String coke = "Coke";
+	final static String iceCream = "Ice Cream";
+	final static String sprite = "Sprite";
 	private String side;
 	private Burger burgers;
 	public Side(String side, Burger burgers) {
@@ -22,17 +25,13 @@ public class Side {
 		return side;
 	}
 
-	public void setSide(String side) {
-		this.side = side;
-	}
+	
 
 	public Burger getBurgers() {
 		return burgers;
 	}
 
-	public void setBurgers(Burger burgers) {
-		this.burgers = burgers;
-	}
+	
 
 	
 	

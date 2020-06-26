@@ -2,13 +2,13 @@ package MyBurger_Shop;
 
 public class Order {
 	private Burger burger;
-	private Bread bread;
-	private Meat meat;
+	private String bread;
+	private String meat;
 	private Meal meal;
-	public Order(Burger burger, Bread bread, Meat meat) {
+	public Order(Burger burger, String ryebread, String beef) {
 		this.burger = burger;
-		this.bread = bread;
-		this.meat = meat;
+		this.bread = ryebread;
+		this.meat = beef;
 	}
 	
 	public Order(Meal meal) {
@@ -16,8 +16,18 @@ public class Order {
 	}
 	
 	
-	
-	public void printOrder() {
-		System.out.println("Hamburguer meal name: " + this.burger.getName() + ", Bread: " + bread.getBread() + ", Meat: " + meat.getMeat());
+	public void addToppings1(double d, String s) {
+		burger.hamburguerPrice(d, s);
 	}
+
+	public void addSides(String coke, String fries) {
+		
+		
+	}
+
+	public void addToppings2(double One, double Two, String top1, String top2) {
+		burger.hamburguerPrice(One, Two, top1, top2);
+	}
+
+
 }

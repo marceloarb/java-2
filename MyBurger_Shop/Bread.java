@@ -1,9 +1,10 @@
 package MyBurger_Shop;
 
-import java.util.List;
+
 
 public class Bread {
-    private String bread = "rye";
+    final static String ryeBread = "rye";
+    final static String whiteBread = "White";
     private Burger burgers;
 	public Bread( Burger burgers) {
 		this.burgers = burgers;
@@ -14,21 +15,7 @@ public class Bread {
 		
 	}
 
-	public String getBread() {
-		return bread;
-	}
-
-	public void setBread(String bread) {
-		this.bread = bread;
-	}
-
-	public Burger getBurgers() {
-		return burgers;
-	}
-
-	public void setBurgers(Burger burgers) {
-		this.burgers = burgers;
-	}
+	
     
     
 }

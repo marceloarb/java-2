@@ -26,6 +26,7 @@ public class Burger {
 	private String mayo = "Mayo";
 	private double mayoPrice = 0.10;
 	private double total = 0.0;
+	static String plain = "plain";
 	
 	
 	
@@ -91,7 +92,7 @@ public class Burger {
 	}
 	public String getKetchup() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			System.out.println("This is a healthy hamburguer you can not put ketchup on it");
 			return null;
 		}
 		return ketchup;
@@ -101,7 +102,6 @@ public class Burger {
 	}
 	public double getKetchupPrice() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
 			return 0.0;
 		}
 		return ketchupPrice;
@@ -136,7 +136,7 @@ public class Burger {
 	}
 	public String getCheese() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			System.out.println("This is a healthy hamburguer you can not put cheese on it");
 			return null;
 		}
 		return cheese;
@@ -146,7 +146,6 @@ public class Burger {
 	}
 	public double getCheesePrice() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
 			return 0.0;
 		}
 		return cheesePrice;
@@ -166,7 +165,6 @@ public class Burger {
 	}
 	public double getBaconPrice() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
 			return 0.0;
 		}
 		return BaconPrice;
@@ -193,61 +191,61 @@ public class Burger {
 		this.namePrice = namePrice;
 	}
 	// Overloading
-	public double hamburguerPrice(double One) {
+	public double hamburguerPrice(double One, String top1) {
 		this.total = this.namePrice+One;
-		System.out.println("Hamburguer price: $" + this.total);
+		System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 );
 		return this.total;
 		
 	}
-	public double hamburguerPrice(double One, double Two) {
+	public double hamburguerPrice(double One, double Two, String top1, String top2) {
 		this.total = this.namePrice+One+Two;
-		System.out.println("Hamburguer price: $" + this.total);
+		System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 +", " +top2);
 		return this.total;
 		
 	}
-	public double hamburguerPrice(double One, double Two, double Three) {
+	public double hamburguerPrice(double One, double Two, double Three,String top1, String top2,String top3) {
 		if(getName().equals("Plain Burguer")) {
 			System.out.println("You can only have 2 toppings for a plain burguer");
 		}
 		else {
 			this.total = this.namePrice+One+Two+Three;
-			System.out.println("Hamburguer price: $" + this.total);
+			System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 +", " +top2 +", " +top3);
 			
 		}
 		return this.total;
 		
 	}
-	public double hamburguerPrice(double One,double Two, double Three, double Four) {
+	public double hamburguerPrice(double One,double Two, double Three, double Four,String top1, String top2,String top3,String top4) {
 		if(getName().equals("Plain Burguer")) {
 			System.out.println("You can only have 2 toppings for a plain burguer");
 		}
 		else {
 			this.total = this.namePrice+One+Two+Three+Four;
-			System.out.println("Hamburguer price: $" + this.total);
+			System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 +", " +top2 +", " +top3 +", " +top4);
 			
 		}
 		return this.total;
 		
 	}
-	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five) {
+	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five,String top1, String top2,String top3,String top4,String top5) {
 		if(getName().equals("Plain Burguer")) {
 			System.out.println("You can only have 2 toppings for a plain burguer");
 		}
 		else {
 			this.total = this.namePrice+One+Two+Three+Four+Five;
-			System.out.println("Hamburguer price: $" + this.total);
+			System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 +", " +top2 +", " +top3 +", " +top4+", " +top5);
 			
 		}
 		return this.total;
 		
 	}
-	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five,double Six) {
+	public double hamburguerPrice(double One,double Two, double Three, double Four,double Five,double Six,String top1, String top2,String top3,String top4,String top5,String top6) {
 		if(getName().equals("Plain Burguer")) {
 			System.out.println("You can only have 2 toppings for a plain burguer");
 		}
 		else {
 			this.total = this.namePrice+One+Two+Three+Four+Five+Six;
-			System.out.println("Hamburguer price: $" + this.total);
+			System.out.println("Hamburguer price with toppings included: $" + this.total +". Topping "+ top1 +", " +top2 +", " +top3 +", " +top4+", " +top5+", " +top6);
 			
 		}
 		return this.total;

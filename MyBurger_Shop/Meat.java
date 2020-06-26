@@ -1,31 +1,22 @@
 package MyBurger_Shop;
 
-import java.util.List;
+
 
 public class Meat {
 	
-	private String meat = "beef";
+	final static String beef = "beef";
+	final static String roastBeef = "Roast Beef";
+	final static String steak = "Steak";
+	
 	private Burger burgers;
-	public Meat(String meat, Burger burgers) {
-		this.meat = meat;
+	public Meat( Burger burgers) {
 		this.burgers = burgers;
 	}
 	public void meatBurguer() {
 		System.out.println("I am able to access the burger class using aggregation. Burger: " + burgers);
 		
 	}
-	public String getMeat() {
-		return meat;
-	}
-	public void setMeat(String meat) {
-		this.meat = meat;
-	}
-	public Burger getBurgers() {
-		return burgers;
-	}
-	public void setBurgers(Burger burgers) {
-		this.burgers = burgers;
-	}
+	
 	
 	
 }
