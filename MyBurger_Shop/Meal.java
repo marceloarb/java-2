@@ -1,6 +1,5 @@
 package MyBurger_Shop;
 
-import java.util.List;
 
 public class Meal {
 	
@@ -8,19 +7,24 @@ public class Meal {
 	private String drinks;
 	private DeluxeBurger deluxeBurger;
 	private Burger burger;
+	private Side side;
 	public Meal(String drinks, String sides,Burger burger) {
 		
-		this.drinks = drinks;
-		this.sides = sides;
-		this.burger = burger;
+			this.drinks = drinks;
+			this.sides = sides;
+			this.burger = burger;
+		
 	}
 	
 	public String getDrinks() {
+		
 		return drinks;
 	}
 	public void setDrinks(String drinks) {
 		this.drinks = drinks;
 	}
+	
+	
 	
 	public Burger getBurger() {
 		

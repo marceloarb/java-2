@@ -3,7 +3,7 @@ package MyBurger_Shop;
 public class HealthBurger extends Burger{
 	private double healthPrice = 7.99;
 	public HealthBurger(String name, String breadType, String meat) {
-		super("Healthy", breadType, meat);
+		super(name, breadType, meat);
 		
 	}
 	

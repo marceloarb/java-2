@@ -136,7 +136,7 @@ public class Burger {
 	}
 	public String getCheese() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put cheese on it");
+			System.out.println("This is a healthy hamburguer you can not put cheese on it" + this.name);
 			return null;
 		}
 		return cheese;
@@ -155,7 +155,7 @@ public class Burger {
 	}
 	public String getBacon() {
 		if(getName().contains("Healthy")) {
-			System.out.println("This is a healthy hamburguer you can not put bacon on it");
+			System.out.println("This is a healthy hamburguer you can not put bacon on it" + getName());
 			return null;
 		}
 		return bacon;

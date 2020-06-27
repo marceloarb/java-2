@@ -11,7 +11,7 @@ public class Bread {
 	}
 	
 	public void breadBurguer() {
-		System.out.println("I am able to access the burger class using aggregation. Burger: " + burgers);
+		System.out.println("I am able to access the burger class using aggregation. Burger: " + burgers.getName());
 		
 	}
 

@@ -20,7 +20,7 @@ public class Order {
 		burger.hamburguerPrice(d, s);
 	}
 
-	public void addSides(String coke, String fries) {
+	public void addSides(String drink, String side) {
 		
 		
 	}
