@@ -14,37 +14,33 @@ public class PlainBurger {
 	public PlainBurger() {
 		
 	}
-	public void addToppings(double top1) {
-		this.total = this.total + top1;
-		System.out.println("Plain burger with toppings for "+total);
+	public void addToppings(Object[] top1) {
+		this.total = this.total + (double) top1[1];
+		System.out.println("with toppings for "+total);
 	}
-	public void addToppings(double top1,double top2) {
-		this.total = this.total + top1 + top2;
-		System.out.println("Plain burger with toppings for "+total);
+	public void addToppings(Object[] top1,Object[] top2) {
+		this.total = this.total + (double) top1[1] + (double) top2[1];
+		System.out.println(" with toppings for "+total);
 	}
-	public void addToppings(double top1,double top2,double top3) {
+	public void addToppings(Object[] top1,Object[] top2,Object[] top3) {
 		
-		if(name.equals("Plain Burguer")) {
+		if(name[0].equals("Plain")) {
 			System.out.println("You can only have 2 toppings for a plain burguer");
 		}
 		else {
-		this.total = this.total + top1 + top2 + top3;
-		System.out.println("Plain burger with toppings for "+total);
+		this.total = this.total + (double)top1[1] + (double)top2[1] + (double) top3[1];
+		System.out.println(" with toppings for "+total);
 		}
 	}
+
 	
 	
+	public void plainBurgerPrice(Object[] name) {
 	
-	
-	
-	public void totalBurgerPrice(){
-		
-	}
-	
-	public void plainBurgerPrice() {
-		
+		meat = (Object[]) name[1];
+		bread = (Object[]) name[2];
 		total = (double)meat[1]+(double)bread[1];
-		System.out.println("Just the plain burger for "+total);
+		System.out.println("Just the "+ name[0] +" for "+total);
 	}
 
 }
