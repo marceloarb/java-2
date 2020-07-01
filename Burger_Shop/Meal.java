@@ -30,26 +30,19 @@ public class Meal {
 		
 		return burger;
 	}
-	public void setBurger(Burger plain) {
-		
-		this.burger = plain;
-	}
+	
 
 	public String getSides() {
 		return sides;
 	}
 
-	public void setSides(String sides) {
-		this.sides = sides;
-	}
+	
 
 	public DeluxeBurger getDeluxeBurger() {
 		return deluxeBurger;
 	}
 
-	public void setDeluxeBurger(DeluxeBurger deluxeBurger) {
-		this.deluxeBurger = deluxeBurger;
-	}
+	
 	
 	
 	public void printPlainMeal() {
